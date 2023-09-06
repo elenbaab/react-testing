@@ -1,0 +1,14 @@
+.menu_display_button{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: aqua;
+}
+
+.menu_list{
+    font-size: 25px;
+    color: blueviolet;
+}
+
+.menu-component-container{
+    border: 2px solid;
+}

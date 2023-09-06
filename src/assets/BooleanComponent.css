@@ -1,0 +1,34 @@
+.boolean_component_container{
+    border: 2px solid #333;
+    padding: 5px;
+    text-align: center;
+}
+
+.boolean_component_count{
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.boolean_component_count:hover{
+    background-color: #0056b3;
+}
+
+.boolean_component_change_button{
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+}
+
+.boolean_component_increment_button:hover{
+    background-color: #0056b3;
+}
+
+.test-true{
+    color: green;
+}
+
+.test-false{
+    color: red;
+}

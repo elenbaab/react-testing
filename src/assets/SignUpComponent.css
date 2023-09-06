@@ -1,0 +1,19 @@
+.sign-up-component-container{
+    border: 2px solid;
+}
+
+.sign-up-button{
+    margin: 5px;
+    background-color: maroon;
+    color: gold;
+}
+
+.form-container{
+    padding: 5px;
+}
+
+.create-account-button{
+    margin: 5px;
+    background-color: blue;
+    color: #fff;
+}

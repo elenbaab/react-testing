@@ -1,0 +1,14 @@
+.add-item-button{
+    background-color: green;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.delete-item-button{
+    background-color: red;
+    margin-left: 10px;
+}
+
+.list-header{
+    color: blue;
+}
