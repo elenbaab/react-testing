@@ -12,3 +12,7 @@
 .list-header{
     color: blue;
 }
+
+.todo-component-container{
+    border: 1px solid black;
+}

@@ -42,42 +42,44 @@ export function ToDoListComponent() {
 
   return (
     <>
-      <button onClick={toggleSetAddItem} className="add-item-button">
-        Add Item
-      </button>
-      {addItem && (
-        <form onSubmit={handleToDoSubmit} className="item-input">
-          <input
-            placeholder="New ToDo Item"
-            type="text"
-            name="text"
-            id="text"
-            onChange={acceptToDoItem}
-            value={toDoItem.todo}
-          />
-        </form>
-      )}
+      <div className="todo-component-container">
+        <button onClick={toggleSetAddItem} className="add-item-button">
+          Add Item
+        </button>
+        {addItem && (
+          <form onSubmit={handleToDoSubmit} className="item-input">
+            <input
+              placeholder="New ToDo Item"
+              type="text"
+              name="text"
+              id="text"
+              onChange={acceptToDoItem}
+              value={toDoItem.todo}
+            />
+          </form>
+        )}
 
-      {toDoList.length === 0 ? (
-        <h3>Nothing to do!</h3>
-      ) : (
-        <>
-          <h4 className="list-header">To Do Items:</h4>
-          <ul>
-            {toDoList.map((item, index) => (
-              <li key={index}>
-                {item.text}
-                <button
-                  onClick={() => deleteItem(index)}
-                  className="delete-item-button"
-                >
-                  Delete
-                </button>
-              </li>
-            ))}
-          </ul>
-        </>
-      )}
+        {toDoList.length === 0 ? (
+          <h3>Nothing to do!</h3>
+        ) : (
+          <>
+            <h4 className="list-header">To Do Items:</h4>
+            <ul>
+              {toDoList.map((item, index) => (
+                <li key={index}>
+                  {item.text}
+                  <button
+                    onClick={() => deleteItem(index)}
+                    className="delete-item-button"
+                  >
+                    Delete
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+      </div>
     </>
   );
 }
