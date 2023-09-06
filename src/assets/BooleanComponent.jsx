@@ -6,6 +6,7 @@ export function BooleanComponent() {
   const toggleBoolean = () => {
     setIsTrue(!isTrue);
   };
+
   return (
     <>
       <div className="boolean_component_container">
