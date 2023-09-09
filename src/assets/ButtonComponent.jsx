@@ -1,8 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./ButtonComponent.css";
 
 export function ButtonComponent() {
   const [count, setCount] = useState(0);
+
+  //
+
+  useEffect(() => {
+    document.title = `React Testing | ${count}`;
+  });
+
+  //
+
   return (
     <>
       <div className="button_component_container">

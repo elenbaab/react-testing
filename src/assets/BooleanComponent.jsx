@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./BooleanComponent.css";
 
 export function BooleanComponent() {
@@ -6,6 +6,8 @@ export function BooleanComponent() {
   const toggleBoolean = () => {
     setIsTrue(!isTrue);
   };
+
+  //
 
   return (
     <>
