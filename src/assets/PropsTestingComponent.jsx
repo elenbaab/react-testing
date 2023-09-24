@@ -15,7 +15,7 @@ export function PropsFunction(props) {
 export function PropsComponent() {
   return (
     <>
-      <PropsFunction title="Title" description="Description" />
+      <PropsFunction title="title123" description="description123" />
     </>
   );
 }
